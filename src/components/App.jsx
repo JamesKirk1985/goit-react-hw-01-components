@@ -1,5 +1,11 @@
+import { Profile } from "./Profile/Profile";
+
+import  userInfo  from '../data/user.json';
 export const App = () => {
+  console.log(userInfo.username)
+  console.log(userInfo.stats.followers)
   return (
+  
     <div
       style={{
         height: '100vh',
@@ -10,7 +16,11 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      React homework template
+    
+      
+      <Profile userInfo={userInfo}></Profile>
     </div>
+      
+     
   );
 };
