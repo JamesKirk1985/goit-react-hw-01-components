@@ -1,4 +1,4 @@
-export const ProfileStats = ({  stats: {followers, views, likes } }) => {
+export const ProfileStats = ({ user: { stats: { followers, views, likes } } }) => {
     return (
         <ul class="stats">
     <li>
