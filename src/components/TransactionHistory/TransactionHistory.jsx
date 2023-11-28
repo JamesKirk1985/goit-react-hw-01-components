@@ -14,10 +14,10 @@ export const Transaction = ({ items }) => {
      <tbody className={css.tableBody}>
        {items.map(({id, type, amount, currency}) => {
          return <tr key={id} className={ css.tableRow}>
-           <td className={ css.tableContent}>{ type}</td>
-           <td className={ css.tableContent}>{ amount}</td>
-           <td className={ css.tableContent}>{currency }</td>
-    </tr>
+                  <td className={ css.tableContent}>{ type}</td>
+                  <td className={ css.tableContent}>{ amount}</td>
+                  <td className={ css.tableContent}>{currency }</td>
+                </tr>
        })}
     
     

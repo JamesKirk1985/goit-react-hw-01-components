@@ -11,11 +11,8 @@ export const Statistics = ({ data }) => {
                         <li className={css.item} key={id} style={{ backgroundColor: colors[i] }}>
                             <span className={css.label}>{ label}</span>
                             <span className={css.percentage}>{ percentage}%</span>
-                    </li>)
-                }) }          
-    
-    
-  </ul>
-</section>
-    )
-}
+                    </li>)}) }               
+            </ul>
+        </section>
+        )
+    }
